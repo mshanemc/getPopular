@@ -20,4 +20,9 @@ There's a sub-component called AllFieldDisplayer.  It receives
 
 Then it displays the fields on the sObject you gave it (not ALL the fields, unless you passed in an object that had queried ALL the fields).   
 
+Clicking on a record navigates you to the detail page for that record.
 
+Not done that nicely:
+
+* handling date fields--you just get the js timestamp format for now 
+* special field types like geolocation.  
