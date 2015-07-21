@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="subject" type="sobject" required="true" description="pass in an sobject that you want to show fields for"/>
+    <aura:attribute name="fieldMap" type="object" required="false" description="map of api field name (string), field label (string).  Anything not provided will default to API name"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <a href="" onclick="{!c.gotoRecord}">
+        <aura:iteration items="{!v.kvps}" var="kvp">
+            <div>{!kvp.key} : {!kvp.value}</div>
+        </aura:iteration>
+    </a>
+</aura:component>

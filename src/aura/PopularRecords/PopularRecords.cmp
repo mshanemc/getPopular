@@ -1,0 +1,15 @@
+<aura:component controller="GetPopular" implements="force:appHostable,flexipage:availableForAllPageTypes">
+    
+	<aura:attribute name="object" type="String" default="User" />
+    <aura:attribute name="DaysWindow" type="Integer" default="30" />
+	<aura:attribute name="fields" type="String"  />
+	<aura:attribute name="recordLimit" type="Integer" default="5" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:iteration items="{!v.objects}" var="record">
+        <c:AllFieldDisplayer subject="{!record}" fieldMap="{!v.fieldLabelMap}"/>
+        <hr/>
+    </aura:iteration>
+    
+</aura:component>
