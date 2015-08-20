@@ -1,10 +1,6 @@
 # getPopular
 Lightning Components for displaying most-followed records
 
-<a href="https://githubsfdeploy.herokuapp.com?owner=mshanemc&repo=getPopular">
-  <img alt="Deploy to Salesforce"
-       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
-</a>
 
 Includes design resources for app builder.  You can specify 
 
