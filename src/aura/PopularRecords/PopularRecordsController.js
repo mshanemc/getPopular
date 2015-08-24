@@ -14,6 +14,7 @@
             var state = response.getState();
             if (component.isValid() && state === "SUCCESS") {
                 component.set("v.objects", response.getReturnValue());
+                component.set("v.objectCount", response.getReturnValue().length);
             } else {
                 console.log(response);
             }
