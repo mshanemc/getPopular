@@ -1,6 +1,7 @@
 # getPopular
 Lightning Components for displaying most-followed records
 
+There's a [demo video](https://www.youtube.com/watch?v=srdIGe7gkYo)!
 
 Includes design resources for app builder.  You can specify 
 
